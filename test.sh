@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sudo apt update && sudo apt install curl -y &>/dev/null
-sudo apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC sudo apt-get install -y --no-install-recommends tzdata git ca-certificates libclang-dev cmake &>/dev/null
-
 if [ ! $NODENAME_GEAR ]; then
 	read -p "Введи ім'я ноди(тільки букви і цифри): " NODENAME_GEAR
 fi
